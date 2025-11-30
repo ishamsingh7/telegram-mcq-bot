@@ -1,4 +1,4 @@
-from telegram import Update
+from telegram import Update, InputFile
 from telegram.ext import ApplicationBuilder, MessageHandler, CommandHandler, ContextTypes, filters
 import os
 
@@ -99,3 +99,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
