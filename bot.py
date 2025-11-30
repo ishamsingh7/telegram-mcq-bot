@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, CommandHandler, ContextTypes, filters
 import os
 
-TOKEN = os.getenv("8207964521:AAEXlbRsuVwMM6OqWm-e5ju7xmjRAP5M9xk") # default local
+TOKEN = os.getenv("BOT_TOKEN")
 
 def parse_questions(text):
     blocks = [b.strip() for b in text.strip().split("\n\n") if b.strip()]
@@ -97,4 +97,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
